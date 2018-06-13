@@ -1,0 +1,10 @@
+;PROJECT=P1
+
+RECEIVERS
+
+1 L-9,02 3,05 H_odbiornika
+2 L-11,96 3,04 H_odbiornika
+3 L-14 3,11 H_odbiornika
+4 3,37 W-3,34 H_odbiornika
+5 5,47 W-3,44 H_odbiornika
+6 8,5 W-3,53 H_odbiornika

@@ -1,0 +1,21 @@
+;PROJECT=-
+
+;INCLUDE
+
+;OFFSETCO
+;OFFSETPL
+
+;MIRROR co_add pl_add
+
+;ABS absname <10 10 10 10 10 10> ;L <10 10 10 10 10 10>
+
+CORNERS
+
+;id x y z
+
+
+PLANES
+
+;[id name  /   / absname  ]
+;[id name  /   / (a /  / a_abs) (b /  / b_abs) ]
+
