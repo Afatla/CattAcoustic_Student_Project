@@ -11,7 +11,7 @@ global L=17,37
 local H=6,313
 local H_okna1=1,61
 local H_okna2=H_okna1+3,4
-local H_okna3=H_okna1+3
+local H_okna3=H_okna1+2,7
 local H_okna4=H_okna1+3,2
 local d_miedzy_oknami=1,2
 local d_okna=2
@@ -27,16 +27,18 @@ local H_scianki=2,7
 ;MIRROR co_add pl_add
 
 ;ABS absname <10 10 10 10 10 10> ;L <10 10 10 10 10 10>
-ABS scianka<20 10 5 2 1 1>	 L <10 10 10 10 10 10> {255 128 64}
-ABS pcv <1 1 2 2 3 4> L <10 10 10 10 10 10> {128 128 128}
-ABS szyba <20 10 5 1 1 1>	 L <10 10 10 10 10 10> {21 234 234}
-ABS parkiet <1 1 2 2 3 4> 	L <10 10 10 10 10 10> {128 64 0}
-ABS kaloryfer <1 1 2 2 3 4> L <10 10 10 10 10 10> {0 128 0}
+ABS scianka1<15 40 60 60 60 60> L <10 10 10 10 10 10> {0 128 64}
+ABS scianka2<15 40 60 60 60 60> L <10 20 20 30 40 50> {0 64 0}
+ABS tynk <1 2 2 3 4 5> L <10 10 10 10 10 10> {255 255 206}
+ABS beton_gladki <1 1 2 2 2 5> L <10 10 10 10 10 10> {128 128 128}
+ABS okno<25 10	7 6 4 2>	 L <10 10 10 10 10 10> {145 200 255}
+ABS parkiet <4 4	5 6 6 6> L <10 10 10 10 10 10> {128 64 0}
+ABS kaloryfer <30 40  50 50 50 40> L <10 10 10 10 10 10> {192 192 192}
+ABS sufit <55 85	100 95 100 100> L <10 10 10 10 10 10> {235 235 235}
 
 ABS podloga= parkiet
-ABS sciana= pcv
-ABS sufit= pcv
-ABS okno=szyba
+ABS sciana= tynk
+
 
 CORNERS
 
@@ -137,28 +139,14 @@ PLANES
 
 [1 podloga / 1 2 3 4 / podloga]
 [2 sciana_drzwi /1 4 8 5 / sciana]
-[3 sciana_z_oknami / 3 7 8 4 /sciana]
 [4 sciana_kosz / 3 105 106 7 /sciana]
-[5 scianka_kosz /105 2 6 106 /scianka]
-[6 scianka_pochyla \101 102 103 104\scianka]
+[3 okna_kaloryfery \3 4 8 7\ (kaloryfer \301 302 303 304\kaloryfer)(kaloryfer \305 306 307 308\kaloryfer)(kaloryfer \309 310 311 312\kaloryfer)(kaloryfer \313 314 315 316\kaloryfer)(kaloryfer \317 318 319 320\kaloryfer)(okno \201 202 203 251 231 241 204\okno)(okno \205 206 207 252 232 242 208\okno)(okno \209 210 211 253 233 243 212\okno) (okno \213 214 215 254 234 244 216\okno)(okno \217 218 219 255 235 245 220\okno)(sciana \ 3 4 8 7 \sciana)]
+[5 scianka_kosz /105 2 6 106 /scianka1]
+[6 scianka_pochyla \101 102 103 104\scianka2]
 [7 sufit \5 115 104 103 116 6 7 8\sufit]
-[8 scianka \2 6 116 99\scianka]
-[9 scianka2 /101 102 99 100/scianka]
+[8 scianka \2 6 116 99\scianka1]
+[9 scianka2 /101 102 99 100/scianka1]
 [10 sciana \1 100 115 5\sciana]
-[11 trojkat1 \101 104 115\sciana]
-[12 trojkat2 /102 103 116/sciana]
+[11 trojkat1 \101 104 115\beton_gladki]
+[12 trojkat2 /102 103 116/beton_gladki]
 
-;[id name  /   / (a /  / a_abs) (b /  / b_abs) ]
-;id powierzchni która chcemy wyciac, numery pkt na pow, numery wycinanych pkt 
-;i powtórzone numery pkt sciany, definiujace pow która ma pozostac
-;[13 okno1 / 1 8 7 14 11  / (okno /201 202 203 204 / okno) (sciana / 1 8 7 14 11 / sciana) ]
-[21 okno1 \3 4 8 7\ (okno \201 202 203 251 231 241 204\okno) (sciana \ 3 4 8 7 \sciana)]
-[22 okno2 \3 4 8 7\ (okno \205 206 207 252 232 242 208\okno) (sciana \ 3 4 8 7 \sciana)]
-[23 okno3 \3 4 8 7\ (okno \209 210 211 253 233 243 212\okno) (sciana \ 3 4 8 7 \sciana)]
-[24 okno4 \3 4 8 7\ (okno \213 214 215 254 234 244 216\okno) (sciana \ 3 4 8 7 \sciana)]
-[25 okno5 \3 4 8 7\ (okno \217 218 219 255 235 245 220\okno) (sciana \ 3 4 8 7 \sciana)]
-[31 kaloryfer1 \3 4 8 7\ (kaloryfer \301 302 303 304\kaloryfer) (sciana \ 3 4 8 7 \sciana)]
-[32 kaloryfer2 \3 4 8 7\ (kaloryfer \305 306 307 308\kaloryfer) (sciana \ 3 4 8 7 \sciana)]
-[33 kaloryfer3 \3 4 8 7\ (kaloryfer \309 310 311 312\kaloryfer) (sciana \ 3 4 8 7 \sciana)]
-[34 kaloryfer4 \3 4 8 7\ (kaloryfer \313 314 315 316\kaloryfer) (sciana \ 3 4 8 7 \sciana)]
-[35 kaloryfer5 \3 4 8 7\ (kaloryfer \317 318 319 320\kaloryfer) (sciana \ 3 4 8 7 \sciana)]
