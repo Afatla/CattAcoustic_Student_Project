@@ -10,8 +10,7 @@ local d_materaca=1,95
 
 ;MIRROR co_add pl_add
 
-;ABS absname <10 10 10 10 10 10> ;L <10 10 10 10 10 10>
-ABS materace <44	54 60 62 58 50> L <10 10 10 10 10 10> {0 0 128}
+ABS materace <44 54 60 62 58 50> L <10 10 10 10 10 10> {0 0 128}
 
 CORNERS
 

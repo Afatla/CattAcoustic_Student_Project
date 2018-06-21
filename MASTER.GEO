@@ -1,7 +1,7 @@
 ;MASTER.GEO
 ;PROJECT=P1
 
-INCLUDE Kosze.geo
+;INCLUDE Kosze.geo
 INCLUDE Materace.geo
 
 global H_zrodla=1,5
@@ -25,16 +25,16 @@ local H_scianki=2,7
 ;OFFSETPL
 
 ;MIRROR co_add pl_add
-
-;ABS absname <10 10 10 10 10 10> ;L <10 10 10 10 10 10>
-ABS scianka1<15 40 60 60 60 60> L <10 10 10 10 10 10> {0 128 64}
-ABS scianka2<15 40 60 60 60 60> L <10 20 20 30 40 50> {0 64 0}
-ABS tynk <1 2 2 3 4 5> L <10 10 10 10 10 10> {255 255 206}
-ABS beton_gladki <1 1 2 2 2 5> L <10 10 10 10 10 10> {128 128 128}
-ABS okno<25 10	7 6 4 2>	 L <10 10 10 10 10 10> {145 200 255}
-ABS parkiet <4 4	5 6 6 6> L <10 10 10 10 10 10> {128 64 0}
-ABS kaloryfer <30 40  50 50 50 40> L <10 10 10 10 10 10> {192 192 192}
-ABS sufit <55 85	100 95 100 100> L <10 10 10 10 10 10> {235 235 235}
+;ABS scianka1     <2 2 2 2 2 4>       L <40 40 10 10 10 10> {0 128 64}
+;ABS scianka2     <2 2 2 2 2 4>       L <50 50 30 30 40 50> {0 64 0} 
+ABS scianka1     <2 2 2 2 2 4>       L <40 45 10 10 10 10> {0 128 64}
+ABS scianka2     <2 2 2 2 2 4>       L <50 85 36 35 40 50> {0 64 0} 
+ABS tynk         <1 2 2 2 2 2>  {255 255 206}
+ABS beton_gladki <1 1 2 2 2 5>  {128 128 128}
+ABS okno         <25 12 8 7 3 1,5> {145 200 255} ;podwójna szyba
+ABS parkiet      <4 6 6 7 6 6>  {128 64 0} ;parkiet
+ABS kaloryfer    <50 54,5 22 20,5 19,5 9,5> L <30 20 10 10 10 10> {192 192 192}
+ABS sufit        <85 100 100 100 93	 95>  {235 235 235} ;linia 158 sufity podwieszane
 
 ABS podloga= parkiet
 ABS sciana= tynk
