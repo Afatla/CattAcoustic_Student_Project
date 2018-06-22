@@ -25,20 +25,17 @@ local H_scianki=2,7
 ;OFFSETPL
 
 ;MIRROR co_add pl_add
-;ABS scianka1     <2 2 2 2 2 4>       L <40 40 10 10 10 10> {0 128 64}
-;ABS scianka2     <2 2 2 2 2 4>       L <50 50 30 30 40 50> {0 64 0} 
-ABS scianka1     <2 2 2 2 2 4>       L <40 45 10 10 10 10> {0 128 64}
-ABS scianka2     <2 2 2 2 2 4>       L <50 85 36 35 40 50> {0 64 0} 
+ABS scianka1     <20 20 20 20 20 10>  L <50 85 36 35 40 50> {0 128 64}
+ABS scianka2     <20 20 20 20 20 10>  L <50 85 36 35 40 50> {0 64 0} 
 ABS tynk         <1 2 2 2 2 2>  {255 255 206}
 ABS beton_gladki <1 1 2 2 2 5>  {128 128 128}
-ABS okno         <25 12 8 7 3 1,5> {145 200 255} ;podwójna szyba
-ABS parkiet      <4 6 6 7 6 6>  {128 64 0} ;parkiet
-ABS kaloryfer    <50 54,5 22 20,5 19,5 9,5> L <30 20 10 10 10 10> {192 192 192}
-ABS sufit        <85 100 100 100 93	 95>  {235 235 235} ;linia 158 sufity podwieszane
+ABS okno         <25 12 8 7 3 1,5> {145 200 255} 
+ABS parkiet      <4 6 6 7 6 6>  {128 64 0} 
+ABS kaloryfer    <50 54,5 22 20,5 19,5 9,5> L <50 85 36 35 40 50> {192 192 192}
+ABS sufit        <85 100 100 100 93	 95>  {235 235 235} 
 
 ABS podloga= parkiet
 ABS sciana= tynk
-
 
 CORNERS
 
@@ -144,9 +141,8 @@ PLANES
 [5 scianka_kosz /105 2 6 106 /scianka1]
 [6 scianka_pochyla \101 102 103 104\scianka2]
 [7 sufit \5 115 104 103 116 6 7 8\sufit]
-[8 scianka \2 6 116 99\scianka1]
-[9 scianka2 /101 102 99 100/scianka1]
-[10 sciana \1 100 115 5\sciana]
-[11 trojkat1 \101 104 115\beton_gladki]
-[12 trojkat2 /102 103 116/beton_gladki]
+[8 scianka \2 6 116 102 101 100 99 \scianka1]
+[9 sciana \1 100 115 5\sciana]
+[10 trojkat1 \101 104 115\beton_gladki]
+[11 trojkat2 /102 103 116/beton_gladki]
 
