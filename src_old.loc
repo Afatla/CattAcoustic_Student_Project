@@ -1,0 +1,19 @@
+;PROJECT=P1
+
+
+ ;A0 L-2,52 W-3 H_zrodla omni aim(0,0); generic source position
+; Lp1m_a = Lp_voice_normal
+Sourcedefs
+
+; a natural source
+;id   position    directivity  aim-position [roll]
+ A1  L-2,52 W-3 H_zrodla      OMNI      0.0 5.0 1.7
+ Lp1m_a   = Lp_white 94 ; white spectrum, 94 dB at 1kHz
+
+; a natural source
+;id   position    directivity  aim-position [roll]
+ A2  L-2,63 2,53 H_zrodla     OMNI      0.0 5.0 1.7
+ Lp1m_a   = Lp_white 94 ; white spectrum, 94 dB at 1kHz
+
+
+

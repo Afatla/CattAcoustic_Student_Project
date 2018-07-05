@@ -1,0 +1,21 @@
+CATT-Acoustic v9.1b debug :  -
+----------------------------------------------------------------------
+DUPLICATE PLANE  ID's    :  no !
+PLANES MODELLED TWICE    :  no !
+DUPLICATE CORNER ID's    :  no !
+DUPLICATE CORNERS        :  no !
+SINGLE-CONNECTED CORNERS : can indicate missing back sides of double planes
+   Corner    99 (only used in plane     8)
+INACCURATE PLANE CORNERS :  no !
+COINCIDING PLANES        :  no !
+EDGES CUTTING/TOUCHING   : 
+ Edge from corners   115 to    100 in plane    9 touches plane    6
+ Edge from corners   100 to      1 in plane    9 touches plane    1
+ Edge from corners   703 to    702 in plane    1 touches plane   18
+ Edge from corners   703 to    702 in plane    1 touches plane   17
+ Edge from corners   703 to    702 in plane    1 touches plane   13
+ Edge from corners   703 to    702 in plane    1 touches plane   13
+ Edge from corners   702 to      2 in plane    1 touches plane    9
+POSSIBLY REVERSED PLANES :  no !
+----------------------------------------------------------------------
+

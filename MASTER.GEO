@@ -25,17 +25,19 @@ local H_scianki=2,7
 ;OFFSETPL
 
 ;MIRROR co_add pl_add
-ABS scianka1     <20 20 20 20 20 10>  L <50 85 36 35 40 50> {0 128 64}
-ABS scianka2     <20 20 20 20 20 10>  L <50 85 36 35 40 50> {0 64 0} 
-ABS tynk         <1 2 2 2 2 2>  {255 255 206}
+ABS scianka1     <30 25 15 15 12 12>  L<10 10 10 10 10 10> {0 128 64}
+ABS scianka2     <35 20 20 20 15 12>  L<10 10 10 10 10 10> {0 64 0} 
 ABS beton_gladki <1 1 2 2 2 5>  {128 128 128}
-ABS okno         <25 12 8 7 3 1,5> {145 200 255} 
-ABS parkiet      <4 6 6 7 6 6>  {128 64 0} 
-ABS kaloryfer    <50 54,5 22 20,5 19,5 9,5> L <50 85 36 35 40 50> {192 192 192}
-ABS sufit        <85 100 100 100 93	 95>  {235 235 235} 
+ABS okno         <20 15 7 6 4 2> L<10 10 10 10 10 10> {145 200 255} 
+ABS parkiet      <4 4 6 7 6 6>  {128 64 0} 
+ABS kaloryfer    <29 27 21 20 15 7> L<10 10 10 15 10 10> {192 192 192}
+ABS sufit        <50 80 70 65 60 60> L<8 35 10 20 10 20> {235 235 235} 
+ABS bet_pomal <8 7 7 7 5 5> L<10 15 12 10 10 10> {255 255 128}
+ABS parkiet_plyw <25 20 18 10 6 6> L<10 10 10 10 10 10> {89 45 0}
 
-ABS podloga= parkiet
-ABS sciana= tynk
+ABS podloga= parkiet_plyw
+ABS sciana= bet_pomal
+
 
 CORNERS
 

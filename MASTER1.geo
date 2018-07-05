@@ -1,8 +1,7 @@
-;MASTER.GEO
+;MASTER1.GEO
 ;PROJECT=P1
 
-;INCLUDE Kosze.geo
-INCLUDE Materace.geo
+;INCLUDE Materace.geo
 
 global H_zrodla=1,5
 global H_odbiornika=1,2
@@ -19,6 +18,7 @@ local H_kaloryfera1=0,3
 local H_kaloryfera2=1,41
 local d_scianki=2,43
 local H_scianki=2,7
+local H_widzow=0,8
 
 
 ;OFFSETCO
@@ -35,10 +35,10 @@ ABS kaloryfer    <29 27 21 20 15 7> L<10 10 10 15 10 10> {192 192 192}
 ABS sufit        <50 80 70 65 60 60> L<8 35 10 20 10 20> {235 235 235} 
 ABS Bet_pomal <8 7 7 7 5 5> L<10 15 12 10 10 10> {120 120 120}
 ABS parkiet_plyw <25 20 18 10 6 6> L<10 10 10 10 10 10> {89 45 0}
+ABS widzowie <16 24 56 69 81 78> L<10 10 10 10 10 10> {255 128 0}
 
-ABS podloga= parkiet_plyw
 ABS sciana= Bet_pomal
-
+ABS podloga=parkiet_plyw
 
 CORNERS
 
@@ -50,6 +50,18 @@ CORNERS
 3 L W 0
 4 0 W 0
 
+501 1 1 H_widzow
+601 x(501) y(501) 0
+502 L-7 1 H_widzow
+602 x(502) y(502) 0
+503 L-7 W-1 H_widzow
+603 x(503) y(503) 0
+504 1 W-1 H_widzow
+604 x(504) y(504) 0
+
+702 x(602) 0 0
+703 x(603) W 0
+ 
 ;sufit
 5 x(1) y(1) H
 6 x(2) y(2) H
@@ -137,7 +149,7 @@ PLANES
 
 ;[id name  /   / absname  ]
 
-[1 podloga / 1 2 3 4 / podloga]
+[1 podloga \ 702 703 3 2 \ podloga]
 [2 sciana_drzwi /1 4 8 5 / sciana]
 [4 sciana_kosz / 3 105 106 7 /sciana]
 [3 okna_kaloryfery \3 4 8 7\ (kaloryfer \301 302 303 304\kaloryfer)(kaloryfer \305 306 307 308\kaloryfer)(kaloryfer \309 310 311 312\kaloryfer)(kaloryfer \313 314 315 316\kaloryfer)(kaloryfer \317 318 319 320\kaloryfer)(okno \201 202 203 251 231 241 204\okno)(okno \205 206 207 252 232 242 208\okno)(okno \209 210 211 253 233 243 212\okno) (okno \213 214 215 254 234 244 216\okno)(okno \217 218 219 255 235 245 220\okno)(sciana \ 3 4 8 7 \sciana)]
@@ -148,4 +160,11 @@ PLANES
 [9 sciana \1 100 115 5\sciana]
 [10 trojkat1 \101 104 115\beton_gladki]
 [11 trojkat2 /102 103 116/beton_gladki]
-
+[12 widzowie_gora/501 502 503 504/widzowie]
+[13 widzowie_przod/502 602 603 503/widzowie]
+[14 podloga_za/1 601 604 4/podloga]
+[15 podloga_bok1\601 602 702 1\podloga]
+[16 podloga_bok2/603 703 4 604/podloga]
+[17 widzowie_bok1/602 502 501 601/widzowie]
+[18 widzowie_bok2\603 503 504 604\widzowie]
+[19 widzowie_tyl\501 601 604 504\widzowie]

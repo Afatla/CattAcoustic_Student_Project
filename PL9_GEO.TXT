@@ -1,4 +1,6 @@
 Colored.PL9
 CoInfo.PL9
 PlInfo.PL9
+SrcInfo3D.PL9
+Srcinfo.PL9
 View4.PL9
